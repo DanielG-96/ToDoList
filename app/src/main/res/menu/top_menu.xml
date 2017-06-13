@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_sort_button"
+        android:icon="@drawable/ic_button_sort"
+        android:title="@string/button_sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_default_button"
+                    android:title="@string/button_sort_default"
+                    />
+                <item
+                    android:id="@+id/sort_name_asc_button"
+                    android:title="@string/button_sort_name_asc"
+                    />
+                <item
+                    android:id="@+id/sort_name_desc_button"
+                    android:title="@string/button_sort_name_desc"
+                    />
+                <item
+                    android:id="@+id/sort_date_added_button"
+                    android:title="@string/button_sort_date_added"
+                    />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_settings_button"
+        android:title="@string/button_settings"
+        app:showAsAction="never"
+        />
+</menu>
